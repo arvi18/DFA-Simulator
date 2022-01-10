@@ -9,47 +9,73 @@
     <!-- Stylesheet and Bootstrap -->
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Jquery-->
     <link rel="stylesheet" href="./jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" />
     <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" />
   </head>
-
-  <body style="background-color: #b4c3eb;">
-    <div
-      class="jumbotron"
-      style="background-color: aliceblue; padding: 4px; margin-top: 3px;"
-    >
-      <div class="hd container">
-        <h1 class="hd1 display-6">DFA - Simulator</h1>
-        <p class="lead">
-          Deterministic Finite Machine tester and simulator. Create and Test DFA
-        </p>
-      </div>
+  
+  <body style="background-color: #eee">
+    <div class="container">
+      <p class="lead" style="font-size: 2.5rem;">
+        Simulation and testing of Deterministic Finite Automata Machine
+      </p>
     </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xl-10">
+    <!-- Rules container -->
+    <div id="rule-box" class="col-xl-10">
+      <h3 id="rule-header">DFA Rules</h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+                DFA refers to deterministic finite automata. Deterministic refers
+                to the uniqueness of the computation. The finite automata are
+                called deterministic finite automata if the machine is read an
+                input string one symbol at a time.
+              </li>
+              <li class="list-group-item">
+                In DFA, there is only one path for specific input from the current
+                state to the next state.
+              </li>
+              <li class="list-group-item">
+                DFA does not accept the null move, i.e., the DFA cannot change
+                state without any input character.
+              </li>
+              
+              <li class="list-group-item">
+                DFA can contain multiple final states.
+              </li>
+            </ul>
+          </div>
+          <!-- Rules container Ends-->
+          
+  </div>
+  
+  
+  <div class="container-fluid">
+      <!-- <div class="row"> -->
+        <div class="col-xl-12">
           <!--Control pannel -->
           <div class="btn-container container">
             <input
               type="button"
               id="add-state"
-              class="btn-sm btn-primary"
+              class="btn-sm btn-outline-info"
               value="Add State"
             />
             <input
               type="button"
               id="connect-state"
-              class="btn-sm btn-primary"
+              class="btn-sm btn-outline-info"
               value="State Transition"
             />
             <input
               type="button"
               id="del-state"
-              class="btn-sm btn-primary"
+              class="btn-sm btn-outline-info"
               value="Delete State"
             />
             <input
@@ -61,7 +87,7 @@
             <input
               type="button"
               id="test-btn"
-              class="btn btn-warning"
+              class="btn btn-success"
               value="Test String"
             />
           </div>
@@ -154,7 +180,7 @@
                     <button
                       type="button"
                       id="add-transition-btn"
-                      class="btn btn-primary"
+                      class="btn btn-outline-info"
                     >
                       Connect states
                     </button>
@@ -218,38 +244,14 @@
             </div>
           </div>
 
-          <!-- Input string Display-->
+          <!-- Input string Display -->
           <div class="input-info container">
-            <p id="test-string-disp">String Test Info</p>
+            <p id="test-string-disp"></p>
           </div>
         </div>
 
-        <!-- Rules container -->
-        <div id="rule-box" class="col-xl-2" style="padding: 4px;">
-          <h3 id="rule-header">DFA Rules</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              DFA refers to deterministic finite automata. Deterministic refers
-              to the uniqueness of the computation. The finite automata are
-              called deterministic finite automata if the machine is read an
-              input string one symbol at a time.
-            </li>
-            <li class="list-group-item">
-              In DFA, there is only one path for specific input from the current
-              state to the next state.
-            </li>
-            <li class="list-group-item">
-              DFA does not accept the null move, i.e., the DFA cannot change
-              state without any input character.
-            </li>
-
-            <li class="list-group-item">
-              DFA can contain multiple final states.
-            </li>
-          </ul>
-        </div>
-        <!-- Rules container Ends-->
-      </div>
+        
+      <!-- </div> -->
     </div>
     <!-- Scripts-->
     <script src="./js/jquery-3.4.1.min.js"></script>
@@ -261,6 +263,5 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 
     <hr />
-
   </body>
 </html>

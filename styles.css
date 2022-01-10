@@ -1,30 +1,32 @@
-.hd {
-  font-family: monospace;
-  text-align: center;
-  font-size: small;
-  font-style: oblique;
+.lead {
+  padding-left: 15px;
+  margin-top: 20px;
+  font-family: poppins;
+  background: rgb(198, 250, 198);
+  border-left: 10px solid green;
+  background-size: cover;
 }
 
-.hd1 {
+/* .hd1 {
   text-align: center;
-  color: #637dc7;
   font-weight: bold;
-  font-family: monospace;
-}
+  font-family: poppins;
+} */
 
 .draw-area {
-  background-color: aliceblue;
+  background-color: #eee;
   height: 600px;
   width: 600px;
   position: relative;
   border: rgb(38, 38, 107) 5px solid;
+  border-radius: 1rem;
 }
 
 .node {
   border: #1f3c7d 2px solid;
   text-align: center;
   border-radius: 40%;
-  background-color: #577ee8;
+  background-color: #0e38aa;
   position: absolute;
   width: 120px;
   height: 90px;
@@ -41,23 +43,18 @@
 
 .console {
   height: 35px;
-  border: #1f3c7d 2px solid;
   margin-bottom: 0;
   margin-top: 1px;
-  background-color: rgb(206, 206, 238);
+  background-color: #f0e1c6;
+  
 }
 
 .console p {
-  color: rgb(38, 38, 107);
-  font-family: monospace;
+  color: rgb(112, 69, 5);
+  font-family: poppins;
   font-size: 18px;
   font-weight: bold;
   text-align: left;
-}
-
-.btn-container {
-  position: relative;
-  align-items: center;
 }
 
 #msg {
@@ -87,7 +84,7 @@
   text-align: center;
   color: #1f3c7d;
   font-weight: bold;
-  font-family: monospace;
+  font-family: poppins;
   font-size: large;
 }
 
@@ -97,24 +94,20 @@
 }
 
 #rule-box {
-  margin-right: auto;
-  width: max-content;
-  background-color: rgb(206, 206, 238);
-  border: #1f3c7d 3px solid;
+  padding: 2rem 13rem 3rem;
 }
 
 #rule-box h3 {
-  text-align: center;
-  color: #637dc7;
   font-weight: bold;
-  font-family: monospace;
+  font-family: poppins;
 }
 
 #rule-box li {
-  background-color: rgb(217, 217, 228);
-  text-align: center;
-  color: #1f3c7d;
-  font-family: monospace;
-  font-weight: bold;
-  font-size: large;
+  background-color: rgba(255, 255, 224, 0.76);
+  border: none;
+  opacity: .5;
+  border-left: 5px solid yellow;
+  border-bottom: 1px solid grey;
+  font-family: poppins;
+  padding: 10px;
 }
