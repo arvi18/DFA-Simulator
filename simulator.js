@@ -188,7 +188,7 @@ $(document).ready(function () {
       }
     });
     const state = document.getElementById(`q${finalStateId}`);
-    state.style.border = "#1f3c7d 12px solid";
+    state.style.border = "lightgreen 12px solid";
   });
 
   // Functions if the node is selected
@@ -225,8 +225,8 @@ $(document).ready(function () {
   // Check select state
   setInterval(() => {
     states.forEach((n) => {
-      let color = "#577ee8";
-      if (n.selected) color = "#abeada";
+      let color = "#90ee90b7";
+      if (n.selected) color = "#5a9c5a";
       $(`#q${n.id}`).css("background-color", color);
     });
   }, 200);
