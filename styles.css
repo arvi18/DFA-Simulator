@@ -105,7 +105,7 @@
 #rule-box li {
   background-color: rgba(255, 255, 224, 0.76);
   border: none;
-  opacity: .5;
+
   border-left: 5px solid yellow;
   border-bottom: 1px solid grey;
   font-family: poppins;
